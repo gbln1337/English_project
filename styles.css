@@ -1,0 +1,107 @@
+body{
+    font-family: "Manrope", sans-serif;
+}
+header{
+    background-color: antiquewhite;
+    text-align: center;
+    height: auto;
+    font-size: 40px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.east_main, .siberia_main, .urals_main, .central_main, .kavkaz_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    width: 100%;
+    height: fit-content;
+    background-color: beige;
+}
+.welcome_text_child{
+    width: 60%;
+}
+a{
+    text-decoration: none;
+}
+.card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    margin: 20px;
+}
+.east, .siberia, .ural, .central, .kavkaz{
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    transition: box-shadow 0.3s ease;
+}
+.east:hover, .siberia:hover, .ural:hover, .central:hover, .kavkaz:hover{
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+footer{
+    background-color: antiquewhite;
+    height: 100px;
+    padding: 10px;
+}
+
+/* SLIDER */
+
+.slider {
+    position: relative;
+    width: 1120px;
+    height: 630px;
+    margin: 15px;
+  }
+  
+  .slides {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slides img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slides img.active {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+  }
