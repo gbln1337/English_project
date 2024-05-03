@@ -1,11 +1,25 @@
 body{
     font-family: "Manrope", sans-serif;
+    background-color: #ffffff9c;
+    padding: 0;
+    margin: 0;
 }
 header{
     background-color: antiquewhite;
     text-align: center;
-    height: auto;
+    height: 100%;
     font-size: 40px;
+    margin: 0;
+}
+h1{
+    margin: 10px;
+    padding: 50px;
+    background-image: url("./pics/central/hermitage.jpg");
+    background-color: #a68a009c;
+    fill-opacity: 100%;
+    opacity: 80%;
+    border: solid black 15px;
+
 }
 main{
     display: flex;
@@ -24,8 +38,15 @@ main{
     align-items: center;
     font-size: 35px;
     width: 100%;
-    height: fit-content;
+    height:100%;
     background-color: beige;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-image: url(./pics/firewatch.jpg);
+    fill-opacity: 100%;
+    opacity: 70%;
+    background-color: #C7F66F;
+    
 }
 .welcome_text_child{
     width: 60%;
